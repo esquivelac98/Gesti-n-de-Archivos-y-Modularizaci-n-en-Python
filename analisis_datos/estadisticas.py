@@ -1,6 +1,6 @@
 # estadisticas.py
 def media(datos):
-    """Esta función calcula la media aritmetica de una lista con valores numericos
+    """Esta funcion calcula la media aritmetica de un lista con valores numericos
 
     Args:
         datos (Lista): Lista de numeros
@@ -19,7 +19,7 @@ def calcular_mediana(datos):
     Returns:
         _type_: _description_
     """
-    datos_sorted = sorted(datos) # sorted es para ordenar los datos
+    datos_sorted = sorted(datos)
     n = len(datos)
     mid = n // 2
     if n % 2 == 0:
