@@ -6,15 +6,19 @@
 # Recuerda incluir tu nombre completo, la fecha en la que iniciaste el proyecto y la fecha estimada de entrega.
 # Esto ayuda a mantener un registro claro del trabajo realizado.
 
-from analisis_datos.estadisticas import media, calcular_mediana
+#from analisis_datos.estadisticas import media, calcular_mediana
 
-lista_parametro = [5,3,1,2,4,8]
+#lista_parametro = [5,3,1,2,4,8]
 
-print('Media: ', round(media(lista_parametro), 2))
-print('Mediana: ', round(calcular_mediana(lista_parametro), 2))
+#print('Media: ', round(media(lista_parametro), 2))
+#print('Mediana: ', round(calcular_mediana(lista_parametro), 2))
 
 
 
 from analisis_datos import *
 
 lista_compras = generar_lista_de_compras()
+print(lista_compras)
+precios = [precio for _, precio in lista_compras]
+print('Media: ', round(media(precios), 2))
+print('Mediana: ', round(calcular_mediana(precios), 2))
